@@ -1,0 +1,32 @@
+.card {
+
+    height: 710px;
+    width: 600px;
+    background-color: black;
+}
+
+.lables {
+    width: 300px;
+}
+
+.a {
+    font-display: justify;
+    text-align: justify;
+    padding-top: 20px;
+    text-justify: inter-word;
+  text-align: justify;
+
+}
+
+.inline {
+    
+        display: inline-block;  
+}
+.transparent{
+    
+        background-color: rgba(245, 245, 245, 1);
+          opacity: .4;
+          width: 200px;
+          height: 100px;
+
+}
