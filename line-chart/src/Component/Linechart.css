@@ -1,32 +1,62 @@
 .card {
 
-    height: 710px;
-    width: 600px;
+    height: 8%;
+    width: 50%;
+    border-radius: 30px;
     background-color: black;
+    right: 0%;
+    top: 30px;
+    bottom: 90px;
+    position: absolute;
+    left: 40px;
+    top: 50px;
+  z-index: -1;
+  position:relative;
+  left:10px;
 }
 
-.lables {
-    width: 300px;
-}
-
-.a {
-    font-display: justify;
-    text-align: justify;
-    padding-top: 20px;
-    text-justify: inter-word;
-  text-align: justify;
-
-}
 
 .inline {
     
         display: inline-block;  
 }
-.transparent{
-    
-        background-color: rgba(245, 245, 245, 1);
-          opacity: .4;
-          width: 200px;
-          height: 100px;
 
+
+
+
+.chart {
+    height: 8%;
+    width: 80%;
+   border-radius: 20px;
+    background-color: black;
+    position: absolute;
+    left: 9.18%;
+    right: 2.89%;
+    top: -50px;
+     border-top: -20px;
+  left: 40px;
+  top: -20px;
+  z-index: -1;
+  position:relative;
+  left:50px; 
+    
+   
+    }
+
+.btn-primary{
+    font-display: fit;
+}
+
+.row-lables {
+width: 92px;
+height: 44px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 44px;
+color: #FFFFFF;
+flex: none;
+order: 0;
+flex-grow: 0;
 }

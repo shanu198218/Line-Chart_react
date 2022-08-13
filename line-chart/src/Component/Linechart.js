@@ -45,12 +45,13 @@ class Linechart extends Component {
                     tension: .4,
                     borderColor: '#1e90ff',
 
+
                 },
                 {
                     label: 'This Month',
                     data: [150, 450, 400, 110, 190, 450, 400, 350, 370, 450, 400, 150, 0, 200, 500, 190, 0, 500, 590, 500],
                     fill: true,
-                    borderDash: [5, 5],
+                    borderDash: [4, 5],
                     tension: .4,
                     borderColor: '#ff1493',
 
@@ -70,7 +71,8 @@ class Linechart extends Component {
             plugins: {
                 legend: {
                     labels: {
-                        color: '#a9a9a9'
+                        color: '#a9a9a9',
+
                     }
                 }
             },
@@ -85,7 +87,8 @@ class Linechart extends Component {
                 },
                 y: {
                     ticks: {
-                        color: '#495057'
+                        color: '#495057',
+
                     },
 
 
@@ -110,32 +113,80 @@ class Linechart extends Component {
                     <br></br>
 
                     <div className="card"  >
-
-                        <h5 style={{ marginRight: '470px', color: '#a9a9a9', fontSize: 'small' }}>Your work summary</h5>
-                        <h5 style={{ color: '#a9a9a9', marginRight: '525px', fontSize: 'small' }}>Nov - July </h5>
-                        <div class="btn-group" role="group" aria-label="Basic example" style={{ marginLeft: '470px', size: 'small' }}>
-                            <button type="button" class="btn btn-primary btn-sm">Daily</button>
-                            <button type="button" class="btn btn-secondary btn-sm">Monthly</button>
+                        <br></br>
+                        <h5 style={{ marginRight: '630px', color: '#a9a9a9', fontSize: 'small' }}>Your work summary</h5>
+                        <h5 style={{ color: '#a9a9a9', marginRight: '690px', fontSize: 'small' }}>Nov - July </h5>
+                        <div class="btn-group" role="group" aria-label="Basic example" style={{ marginLeft: '650px', size: 'small', width: '67px', height: '27px', padding: '4px 8px 4px 8px', position: 'relative' }}>
+                            <button type="button" style={{ padding: '4px 8px 4px 8px', fontSize: 'small', marginTop: '-5px' }} class="btn btn-primary btn-sm" >Daily</button>
+                            <button type="button" style={{ padding: '4px 2px 4px 2px', fontSize: 'small', marginTop: '-5px' }} class="btn btn-secondary btn-sm">Monthly</button>
 
                         </div>
 
-
-                        <Chart type="line" data={this.basicData} options={basicOptions} />
-
-
-                        <div className='row lables' marginBottom='90%'>
-                            <div className='col'>
-                                <h1 style={{ color: '#a9a9a9', fontSize: 'large' }}>9845 </h1>
-                            </div>
-                            <div className='col'>
-                                <p style={{ color: '#008000', fontSize: 'small' }}>* 829 </p>
-                            </div>
-                            <div className='col-7'>
-                                <p style={{ color: '#a9a9a9', fontSize: 'small' }}>Sign-Ups past 30 days</p>
-                            </div>
+                        <div className='chart'>
+                            <Chart type="line" data={this.basicData} options={basicOptions} />
 
 
-                        </div >
+                            <div className='row lables' marginTop='-150%'>
+                                <div className='col'>
+                                    <h1 style={{
+                                        width: '92px',
+                                        height: '44px',
+
+                                        /* Heading 2 */
+                                        fontFamily: 'Inter',
+                                        fontStyle: 'normal',
+                                        fontWeight: '500',
+                                        fontSize: '36px',
+                                        lineHeight: '44px',
+
+                                        /* identical to box height */
+
+                                        /* Base/Grey 0 */
+                                        color: '#FFFFFF',
+
+
+                                        /* Inside auto layout */
+                                        flex: 'none',
+                                        order: '0',
+                                        flexGrow: 0,
+                                    }}>9845 </h1>
+                                </div>
+
+                                <div className='col'>
+                                    <p style={{
+                                        color: '#a9a9a9', display: 'flex',
+                                        flexDirection: 'row',
+                                        alignItems: 'center',
+                                        padding: '2px 6px',
+                                        gap: '4px',
+                                        width: '53px',
+                                        height: '24px',
+                                        background: 'rgba(48, 224, 161, 0.2)',
+                                        borderRadius: '6px',
+                                        flex: 'none',
+                                        order: '0',
+                                        flexGrow: '0',
+                                    }}>* 829 </p>
+                                </div>
+                                <div className='col-7'>
+                                    <p style={{
+                                        width: '152px',
+                                        height: '17px',
+                                        fontFamily: 'Inter',
+                                        fontStyle: 'normal',
+                                        fontWeight: '400',
+                                        fontSize: '14px',
+                                        lineHeight: '50px',
+                                        color: '#FFFFFF',
+                                        flex: 'none',
+                                        order: 2,
+                                        flexgrow: 0,
+                                    }}>Sign-Ups past 30 days</p>
+                                </div>
+
+
+                            </div >
+                        </div>
                     </div>
                 </center >
             </div >
